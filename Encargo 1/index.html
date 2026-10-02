@@ -1,78 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gloria García | Portafolio</title>
+  <title>Gloria García</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 
-<body class="inicio">
+  <!-- FONDO -->
+  <div class="background"></div>
 
-  <!-- =====================================
-       MENÚ
-  ====================================== -->
+  <!-- ESTRELLAS PEQUEÑAS -->
+  <div class="floating-stars">
+    <span>✦</span>
+    <span>✦</span>
+    <span>✦</span>
+    <span>✦</span>
+    <span>✦</span>
+    <span>✦</span>
+    <span>✦</span>
+    <span>✦</span>
+  </div>
 
-  <header class="menu">
 
-    <!-- SOLO EN INDEX -->
-    <a href="index.html" class="marca">
-      <span>Diseño PUCV</span>
-    </a>
+  <!-- BOTÓN MENÚ -->
+  <button class="menu-button" id="menuButton" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
+
+  <!-- MENÚ LATERAL -->
+  <aside class="side-menu" id="sideMenu">
 
     <nav>
 
-      <a href="trabajos.html">
-        Trabajos seleccionados
+      <a href="#inicio">
+        <span class="menu-star orange">✦</span>
+        Inicio
       </a>
 
-      <a href="talleres.html">
+      <a href="#sobre-mi">
+        <span class="menu-star green">✦</span>
+        Sobre mí
+      </a>
+
+      <a href="#talleres">
+        <span class="menu-star yellow">✦</span>
         Talleres cursados
       </a>
 
-      <a href="sobre-mi.html">
-        Sobre mí
+      <a href="#proyectos">
+        <span class="menu-star purple">✦</span>
+        Proyectos de interacción
+      </a>
+
+      <a href="#contacto">
+        <span class="menu-star coral">✦</span>
+        Contacto
+      </a>
+
+      <a
+        href="https://wiki.ead.pucv.cl/Gloria_Garc%C3%ADa"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="casiopea-menu"
+      >
+        <span class="menu-star gray">✦</span>
+        Perfil Casiopea
+        <span class="external">↗</span>
       </a>
 
     </nav>
 
-  </header>
+  </aside>
 
-
-
-  <!-- =====================================
-       PORTADA
-  ====================================== -->
 
   <main>
 
-    <section class="portada">
+    <!-- =========================
+         INICIO
+    ========================== -->
+    <section class="hero" id="inicio">
 
-      <div class="portada-texto">
+      <div class="hero-content">
 
-        <p class="portafolio-titulo">
-          Portafolio
+        <p class="hello">
+          Holaa, soy
+          <span class="tiny-star orange-star">✦</span>
         </p>
 
+        <h1>Gloria García</h1>
 
-        <h1>
-          Gloria García
-        </h1>
-
-
-        <!-- FLECHA -->
-        <button
-          class="flecha"
-          id="flechaInicio"
-          aria-label="Conocer el portafolio"
+        <a
+          class="casiopea-button"
+          href="https://wiki.ead.pucv.cl/Gloria_Garc%C3%ADa"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          ↓
-        </button>
+          Perfil Casiopea
+          <span>↗</span>
+        </a>
+
+
+        <!-- ESTRELLA PRINCIPAL -->
+        <a href="#sobre-mi" class="main-star">
+
+          <span class="star-text">
+            Sobre mí
+            <strong>↓</strong>
+          </span>
+
+        </a>
+
+      </div>
+
+      <div class="explore">
+        <span>Explorar</span>
+        <strong>↓</strong>
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SOBRE MÍ
+    ========================== -->
+    <section class="section about" id="sobre-mi">
+
+      <div class="section-title">
+
+        <a href="#sobre-mi" class="number">01</a>
+
+        <h2>Sobre mí</h2>
+
+      </div>
+
+
+      <div class="about-content">
+
+        <div class="about-text">
+
+          <p>
+            Soy estudiante de tercer año de Diseño en la
+            Pontificia Universidad Católica de Valparaíso.
+          </p>
+
+          <p>
+            Mis intereses son el diseño gráfico y de interacción,
+            sigo descubriendo y explorando que rama tomar.
+          </p>
+
+        </div>
+
+
+        <div class="interests">
+
+          <p>
+            <span class="mini orange">✦</span>
+            Me gusta pintar con acuarela
+          </p>
+
+          <p>
+            <span class="mini yellow">✦</span>
+            Ver los atardeceres tomando tecito
+          </p>
+
+          <p>
+            <span class="mini green">✦</span>
+            Caminar por la costa de Concón
+          </p>
+
+        </div>
 
       </div>
 
@@ -80,30 +189,101 @@
 
 
 
-    <!-- =====================================
-         TEXTO QUE CONTEXTUALIZA EL PORTAFOLIO
-    ====================================== -->
+    <!-- =========================
+         TALLERES
+    ========================== -->
+    <section class="section workshops" id="talleres">
 
-    <section
-      class="contexto-portafolio"
-      id="contexto"
-    >
+      <div class="section-title">
 
-      <div class="contexto-caja">
+        <a href="#talleres" class="number">02</a>
 
-        <p>
-          En este portafolio podrás conocer algunos de los
-          proyectos que he desarrollado durante mi formación,
-          junto con mi perfil de Casiopea, donde encontrarás
-          los talleres que he cursado y parte de mi proceso
-          de aprendizaje.
-        </p>
+        <h2>
+          Talleres<br>
+          cursados
+        </h2>
+
+      </div>
 
 
-        <p>
-          También puedes conocer más sobre mí y contactarme
-          si te interesa trabajar conmigo :)
-        </p>
+      <div class="stars-grid">
+
+        <!-- TALLER 1 -->
+        <a
+          href="https://wiki.ead.pucv.cl/Taller_de_Observaci%C3%B3n_Fundamento_y_Forma_2024_S1"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-star orange"
+        >
+          <span>+</span>
+          <strong>
+            Toff<br>
+            2024 S1
+          </strong>
+        </a>
+
+
+        <!-- TALLER 2 -->
+        <a
+          href="https://wiki.ead.pucv.cl/Taller_de_Objetos_Materiales_2024"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-star yellow"
+        >
+          <span>+</span>
+          <strong>
+            Objetos<br>
+            Materiales<br>
+            2024 S2
+          </strong>
+        </a>
+
+
+        <!-- TALLER 3 -->
+        <a
+          href="https://wiki.ead.pucv.cl/Taller_Ciudad_Legible_2025"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-star purple"
+        >
+          <span>+</span>
+          <strong>
+            Ciudad<br>
+            Legible<br>
+            2025 S1
+          </strong>
+        </a>
+
+
+        <!-- TALLER 4 -->
+        <a
+          href="https://wiki.ead.pucv.cl/Taller_del_Habitar_2025"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-star green"
+        >
+          <span>+</span>
+          <strong>
+            Habitar<br>
+            2025 S2
+          </strong>
+        </a>
+
+
+        <!-- TALLER 5 -->
+        <a
+          href="https://wiki.ead.pucv.cl/Taller_de_la_Ocasi%C3%B3n_Editorial_2026"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-star coral"
+        >
+          <span>+</span>
+          <strong>
+            Ocasión<br>
+            Editorial<br>
+            2026 S1
+          </strong>
+        </a>
 
       </div>
 
@@ -111,116 +291,99 @@
 
 
 
-    <!-- =====================================
-         FLORES / TRES SECCIONES
-    ====================================== -->
+    <!-- =========================
+         PROYECTOS
+    ========================== -->
+    <section class="section projects" id="proyectos">
 
-    <section
-      class="inicio-contenido"
-      id="contenido"
-    >
+      <div class="section-title">
 
-
-      <!-- TRABAJOS -->
-
-      <a
-        href="trabajos.html"
-        class="inicio-item"
-      >
-
-        <div class="flor-contenedor">
-
-          <img
-            src="imagenes/imagenes-encargo02-DDEC/flor-contacto.png"
-            class="flor"
-            alt=""
-          >
-
-        </div>
-
+        <a href="#proyectos" class="number">03</a>
 
         <h2>
-          Trabajos seleccionados
+          Proyectos de<br>
+          interacción
         </h2>
 
-      </a>
+      </div>
 
 
+      <div class="projects-grid">
 
-      <!-- TALLERES -->
+        <!-- OLEAJE -->
+        <a
+          href="https://wiki.ead.pucv.cl/Oleaje_en_Trazos_-_Exposici%C3%B3n_IE_2025"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-star purple"
+        >
 
-      <a
-        href="talleres.html"
-        class="inicio-item"
-      >
+          <span>+</span>
 
-        <div class="flor-contenedor">
+          <strong>
+            Oleaje en<br>
+            Trazos
+            IE 2025
+          </strong>
 
-          <img
-            src="imagenes/imagenes-encargo02-DDEC/flor-trabajos.png"
-            class="flor"
-            alt=""
-          >
+          <b>↗</b>
 
-        </div>
-
-
-        <h2>
-          Talleres cursados
-        </h2>
-
-      </a>
+        </a>
 
 
+        <!-- SITIO WEB -->
+        <a
+          href="https://wiki.ead.pucv.cl/Sitio_Web_IE_-_Gloria_Garc%C3%ADa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-star orange"
+        >
 
-      <!-- SOBRE MÍ -->
+          <span>+</span>
 
-      <a
-        href="sobre-mi.html"
-        class="inicio-item"
-      >
+          <strong>
+            Sitio Web<br>
+            IE 2025
+          </strong>
 
-        <div class="flor-contenedor">
+          <b>↗</b>
 
-          <img src="imagenes/imagenes-encargo02-DDEC/flor-perfil.png"
-            alt="Un poco sobre mí" 
-            class="flor flor-blanca"
-          >
+        </a>
 
-        </div>
-
-
-        <h2>
-          Un poco sobre mí
-        </h2>
-
-      </a>
+      </div>
 
     </section>
 
 
 
-    <!-- =====================================
+    <!-- =========================
          CONTACTO
-    ====================================== -->
+    ========================== -->
+    <section class="section contact" id="contacto">
 
-    <section class="contacto-inicio">
+      <div class="section-title">
 
-      <h2>
-        ¿Quieres seguir viendo mi trabajo?
-      </h2>
+        <a href="#contacto" class="number">04</a>
 
+        <h2>Contacto</h2>
 
-      <p>
-        Si te interesa conocer más de mis proyectos
-        o trabajar conmigo, puedes contactarme.
-      </p>
+      </div>
 
 
-      <div class="contacto-links">
+      <div class="contact-content">
 
-        <a href="mailto:gloria.garcia.c@mail.pucv.cl">
-          gloria.garcia.c@mail.pucv.cl →
+        <p>
+          Me puedes contactar<br>
+          por Gmail:
+        </p>
+
+
+        <a
+          href="mailto:gloria.garcia.c@mail.pucv.cl"
+          class="email-button"
+        >
+          gloria.garcia.c@mail.pucv.cl
+          <span>↗</span>
         </a>
 
       </div>
@@ -230,17 +393,7 @@
   </main>
 
 
-
-  <footer>
-
-    Sitio web creado con la ayuda de inteligencia artificial.<br>
-    © Gloria García
-
-  </footer>
-
-
   <script src="script.js"></script>
 
 </body>
-
 </html>
