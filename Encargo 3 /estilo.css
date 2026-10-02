@@ -1,1 +1,1048 @@
+/* =====================================================
+   RESET
+===================================================== */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #9c4d82;
+    color: #171717;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   HEADER / NAVEGACIÓN
+===================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    min-height: 70px;
+
+    padding: 0 4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f1eee7;
+    border-bottom: 1px solid #171717;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.main-nav a {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s;
+}
+
+.main-nav a:hover {
+    border-bottom-color: #171717;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 90vh;
+
+    padding: 5vw;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    border-bottom: 1px solid #171717;
+}
+
+.hero-contenido {
+    width: 100%;
+}
+
+.hero h1 {
+    width: 100%;
+
+    color: #38011c;
+
+    font-size: clamp(60px, 8vw, 100px);
+
+    line-height: 0.85;
+
+    letter-spacing: -0.07em;
+
+    white-space: nowrap;
+}
+
+.hero h1 span {
+    font-weight: normal;
+}
+
+.hero-bajada {
+    max-width: 500px;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   INTRODUCCIÓN
+===================================================== */
+
+.introduccion {
+    padding: 8vw 10vw;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    border-bottom: 1px solid #171717;
+}
+
+.intro-contenido {
+    max-width: 1000px;
+}
+
+.intro-contenido h2 {
+    max-width: 700px;
+
+    color: #38011c;
+
+    font-size: clamp(38px, 5vw, 70px);
+
+    line-height: 0.95;
+
+    letter-spacing: -0.045em;
+
+    font-weight: 600;
+
+    margin-bottom: 50px;
+}
+
+.intro-columnas {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 5vw;
+
+    max-width: 900px;
+}
+
+.intro-columnas p {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   DIFERENCIA
+===================================================== */
+
+.diferencia {
+    min-height: 400px;
+
+    padding: 6vw 8vw;
+
+    background: #f1eee7;
+
+    color: #38011c;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: center;
+
+    column-gap: 6vw;
+}
+
+.diferencia-item {
+    width: 100%;
+}
+
+.diferencia-item h3 {
+    font-size: clamp(50px, 6vw, 90px);
+
+    line-height: 0.85;
+
+    letter-spacing: -0.05em;
+
+    margin: 0 0 25px 0;
+}
+
+.diferencia-item p {
+    max-width: 350px;
+
+    font-size: 17px;
+}
+
+.diferencia-signo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+
+    font-size: 60px;
+    line-height: 1;
+}
+
+
+/* =====================================================
+   CASOS
+===================================================== */
+
+.caso {
+    padding: 10vw 8vw;
+}
+
+.caso-sitio {
+    background: #9c4d82;
+}
+
+.caso-plataforma {
+    background: #ddd8cd;
+}
+
+.caso-header {
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    gap: 5vw;
+
+    margin-bottom: 13vw;
+}
+
+.caso-numero {
+    font-size: 100px;
+
+    font-weight: bold;
+
+    line-height: .8;
+}
+
+.caso-header h2 {
+    max-width: 950px;
+
+    font-size: clamp(60px, 9vw, 140px);
+
+    line-height: .82;
+
+    letter-spacing: -.07em;
+
+    margin-bottom: 40px;
+}
+
+.link-sitio {
+    display: inline-block;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #171717;
+}
+
+
+/* =====================================================
+   BLOQUES DE ANÁLISIS
+===================================================== */
+
+.analisis-bloque {
+    max-width: 1100px;
+
+    margin: 0 auto 120px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 7vw;
+}
+
+.pregunta span {
+    font-size: 12px;
+}
+
+.pregunta h3 {
+    margin-top: 15px;
+
+    font-size: 34px;
+
+    line-height: 1;
+}
+
+.respuesta {
+    font-size: 18px;
+}
+
+.respuesta p {
+    margin-bottom: 25px;
+}
+
+.respuesta strong {
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   CONCEPTOS
+===================================================== */
+
+.concepto {
+    margin-top: 40px;
+
+    padding: 25px;
+
+    border: 1px solid #171717;
+}
+
+.concepto strong {
+    display: block;
+
+    font-size: 11px;
+
+    letter-spacing: .1em;
+
+    margin-bottom: 15px;
+}
+
+.concepto p {
+    margin-bottom: 0;
+}
+
+code {
+    padding: 3px 6px;
+
+    background: #171717;
+
+    color: #f1eee7;
+
+    font-family: monospace;
+
+    font-size: .85em;
+}
+
+
+/* =====================================================
+   ESQUEMA DE NAVEGACIÓN
+===================================================== */
+
+.esquema {
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.esquema div {
+    padding: 15px 20px;
+
+    border: 1px solid #171717;
+
+    font-size: 11px;
+
+    letter-spacing: .08em;
+}
+
+
+/* =====================================================
+   EVIDENCIA
+===================================================== */
+
+.evidencia {
+    max-width: 1200px;
+
+    margin: 0 auto 130px;
+}
+
+.evidencia-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    border-bottom: 1px solid #171717;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 30px;
+}
+
+.evidencia-header span {
+    font-size: 11px;
+
+    letter-spacing: .12em;
+}
+
+.evidencia-header h3 {
+    font-size: 30px;
+}
+
+
+/* =====================================================
+   IMÁGENES DE EVIDENCIA
+===================================================== */
+
+.imagen-placeholder {
+    width: 100%;
+
+    min-height: 0;
+
+    background: #d5d1c8;
+
+    border: 1px solid #171717;
+
+    overflow: hidden;
+}
+
+.imagen-placeholder img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   CÓDIGO CONCEPTUAL
+===================================================== */
+
+.codigo-conceptual {
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #171717;
+}
+
+.codigo-conceptual span {
+    width: 100%;
+
+    font-size: 11px;
+
+    letter-spacing: .1em;
+}
+
+.codigo-conceptual code {
+    display: block;
+
+    padding: 15px;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   DEVTOOLS
+===================================================== */
+
+.devtools {
+    max-width: 1100px;
+
+    margin: 0 auto 130px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.5fr;
+
+    gap: 5vw;
+
+    align-items: center;
+}
+
+.devtools h3 {
+    font-size: 50px;
+
+    line-height: .9;
+
+    margin-bottom: 30px;
+}
+
+.devtools p {
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   PANTALLAS
+===================================================== */
+
+.pantallas {
+    max-width: 1100px;
+
+    margin: 0 auto 130px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.pantallas article {
+    border-top: 1px solid #171717;
+
+    padding-top: 15px;
+}
+
+.pantallas span {
+    display: block;
+
+    font-size: 11px;
+
+    letter-spacing: .1em;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   COMPUTADOR
+===================================================== */
+
+.pantallas article:nth-child(1) img {
+    width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   TELÉFONO
+===================================================== */
+
+.pantallas article:nth-child(2) img {
+    width: 45%;
+
+    height: auto;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+.pantallas p {
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   OPINIÓN
+===================================================== */
+
+.opinion {
+    max-width: 1000px;
+
+    margin: 0 auto 50px;
+
+    padding: 50px;
+
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    gap: 50px;
+
+    border: 1px solid #171717;
+}
+
+.opinion-label {
+    font-size: 45px;
+
+    font-weight: bold;
+
+    line-height: .9;
+}
+
+.opinion p {
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   LISTA DE HERRAMIENTAS IDE
+===================================================== */
+
+.lista-herramientas {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 40px;
+}
+
+.lista-herramientas div {
+    padding: 20px;
+
+    border: 1px solid #171717;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   COMPARACIÓN
+===================================================== */
+
+.comparacion-final {
+    background: #9c4d82;
+
+    color: #38011c;
+
+    padding: 12vw 8vw;
+}
+
+.comparacion-titulo {
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    gap: 5vw;
+
+    margin-bottom: 100px;
+}
+
+.comparacion-titulo > span {
+    font-size: 100px;
+
+    font-weight: bold;
+
+    line-height: .8;
+}
+
+.comparacion-titulo h2 {
+    max-width: 900px;
+
+    font-size: clamp(60px, 8vw, 120px);
+
+    line-height: .85;
+
+    letter-spacing: -.06em;
+}
+
+
+/* =====================================================
+   TABLA
+===================================================== */
+
+.tabla {
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.tabla-fila {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 2fr;
+
+    gap: 30px;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #f1eee7;
+}
+
+.tabla-header {
+    font-size: 11px;
+
+    letter-spacing: .1em;
+}
+
+
+/* =====================================================
+   CONCLUSIÓN
+===================================================== */
+
+.conclusion {
+    max-width: 1000px;
+
+    margin: 150px auto 0;
+}
+
+.conclusion h3 {
+    max-width: 800px;
+
+    font-size: clamp(55px, 8vw, 110px);
+
+    line-height: .85;
+
+    letter-spacing: -.06em;
+
+    margin-bottom: 70px;
+}
+
+.conclusion-texto {
+    max-width: 750px;
+
+    margin-left: auto;
+}
+
+.conclusion-texto p {
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+.frase-final {
+    padding-top: 30px;
+
+    border-top: 1px solid #f1eee7;
+
+    font-size: 25px !important;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: #38011c;
+
+    color: #f1eee7;
+
+    border-top: 1px solid #f1eee7;
+
+    padding: 30px 5vw;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    letter-spacing: .1em;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 70px 1fr;
+    }
+
+    .intro-columnas {
+        grid-template-columns: 1fr;
+    }
+
+    .analisis-bloque {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .devtools {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-herramientas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tabla-fila {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   TELÉFONO
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 15px 20px;
+
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        gap: 10px;
+
+        justify-content: flex-end;
+    }
+
+    .main-nav a {
+        font-size: 9px;
+    }
+
+    .hero {
+        min-height: 85vh;
+
+        padding: 25px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        justify-content: space-between;
+    }
+
+    .hero-numero {
+        font-size: 65px;
+    }
+
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    .hero-bajada {
+        margin-top: 30px;
+    }
+
+    .introduccion {
+        padding: 90px 25px;
+
+        display: block;
+    }
+
+    .indice-seccion {
+        margin-bottom: 50px;
+    }
+
+    .intro-contenido h2 {
+        font-size: 45px;
+
+        max-width: 500px;
+
+        margin-bottom: 40px;
+    }
+
+    .intro-columnas {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .diferencia {
+        padding: 60px 25px;
+
+        display: block;
+    }
+
+    .diferencia-item {
+        margin-bottom: 40px;
+    }
+
+    .diferencia-item h3 {
+        font-size: 45px;
+    }
+
+    .diferencia-signo {
+        display: none;
+    }
+
+    .caso {
+        padding: 80px 25px;
+    }
+
+    .caso-header {
+        display: block;
+
+        margin-bottom: 100px;
+    }
+
+    .caso-numero {
+        font-size: 70px;
+
+        margin-bottom: 50px;
+    }
+
+    .caso-header h2 {
+        font-size: 65px;
+    }
+
+    .analisis-bloque {
+        margin-bottom: 90px;
+    }
+
+    .pregunta h3 {
+        font-size: 30px;
+    }
+
+    .respuesta {
+        font-size: 16px;
+    }
+
+    .evidencia {
+        margin-bottom: 90px;
+    }
+
+    .imagen-placeholder {
+        min-height: 0;
+    }
+
+    .pantallas {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .pantallas article:nth-child(1) img {
+        width: 100%;
+    }
+
+    .pantallas article:nth-child(2) img {
+        width: 70%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .opinion {
+        display: block;
+
+        padding: 30px;
+    }
+
+    .opinion-label {
+        margin-bottom: 40px;
+    }
+
+    .lista-herramientas {
+        grid-template-columns: 1fr;
+    }
+
+    .comparacion-final {
+        padding: 80px 25px;
+    }
+
+    .comparacion-titulo {
+        display: block;
+    }
+
+    .comparacion-titulo > span {
+        display: block;
+
+        font-size: 70px;
+
+        margin-bottom: 50px;
+    }
+
+    .comparacion-titulo h2 {
+        font-size: 65px;
+    }
+
+    .tabla-fila {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .tabla-fila > div:first-child {
+        font-weight: bold;
+
+        margin-top: 20px;
+    }
+
+    .conclusion {
+        margin-top: 90px;
+    }
+
+    .conclusion h3 {
+        font-size: 50px;
+    }
+
+    .conclusion-texto {
+        margin-left: 0;
+    }
+
+    footer {
+        display: block;
+
+        padding: 25px;
+    }
+
+    footer p + p {
+        margin-top: 15px;
+    }
+
+}
